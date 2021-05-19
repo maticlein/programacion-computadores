@@ -13,5 +13,4 @@ int main(){
     } else {
         printf("ES IMPAR!\n");
     }
-    return 0;
 }
