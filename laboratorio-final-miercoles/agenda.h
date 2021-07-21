@@ -1,0 +1,2 @@
+// Prototipos
+void agregarContacto();
