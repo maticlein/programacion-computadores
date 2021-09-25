@@ -1,5 +1,5 @@
 all:
-	g++ -c agenda.cpp
-	g++ -c main.cpp
+	g++ -c agenda.c
+	g++ -c main.c
 	g++ -o ejecutable agenda.o main.o
 	./ejecutable 

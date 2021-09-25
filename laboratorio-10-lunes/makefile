@@ -1,5 +1,5 @@
 all:
-	g++ -c juegoGato.cpp
-	g++ -c main.cpp
+	g++ -c juegoGato.c
+	g++ -c main.c
 	g++ -o ejecutable juegoGato.o main.o
 	./ejecutable
