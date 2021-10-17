@@ -5,9 +5,11 @@ int main(){
     printf("Ingrese un número: ");
     scanf("%i", &numero); // 7
 
+    // Se revisa cada número entre el 2 y el número ingresado.
     for(int i = 2 ; i <= numero ; i++){
         // printf("BUSCAR SI EL %i TIENE 2 DIVISORES\n", i);
         int divisores = 0;
+        // Para cada número se buscan potenciales divisores.
         for(int j = 2 ; j < i ; j++){
             // printf("REVISANDO: %i\n", j);
             int resto = i%j;
