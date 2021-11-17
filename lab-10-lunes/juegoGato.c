@@ -1,4 +1,5 @@
 #include "./juegoGato.h"
+#include <stdbool.h>
 #include <stdio.h>
 
 // Implementaciones
