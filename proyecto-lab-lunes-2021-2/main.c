@@ -1,25 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "matematica.h"
 
 int main(){
     int opcion = 0;
+    float numero1;
+    float numero2;
+    float resultado;
 
     // Pantalla de inicio
-    printf("----------------------------------------\n");
-    printf("----------------------------------------\n");
-    printf("----- Software de Ayuda Matemática -----\n");
-    printf("----------------------------------------\n");
-    printf("----------------------------------------\n");
+    pantallaInicio();
     
     // Bienvenida y menú
-    printf("Bienvenido!\n");
-    printf("Este software cuenta con las siguientes opciones:\n");
-    printf("1.- Operaciones básicas\n");
-    printf("2.- Cálculo de pendiente de una recta\n");
-    printf("3.- Distancia entre dos puntos\n");
-    printf("4.- Solucionador de ecuaciones cuadráticas\n");
-    printf("5.- Triángulos\n");
-    printf("6.- Salir\n");
+    menuPrincipal();
     
     // Ingresar la opción
     printf("Por favor seleccione una opción: ");
@@ -48,21 +41,7 @@ int main(){
                         printf("Opción inválida por favor ingrese nuevamente: ");
                         scanf("%i", &opcion);
                 }
-                switch(opcion){
-                        case 1: system("clear");
-                                printf("Suma\n");
-                                break;
-                        case 2: system("clear");
-                                printf("Resta\n");
-                                break;
-                        case 3: system("clear");
-                                printf("Multiplicación\n");
-                                break;
-                        case 4: system("clear");
-                                printf("División\n");
-                                break;
-                        default: printf("La opción ingresada no es válida!\n");
-                }
+                printf("El resultado es: %.2f\n", realizarCalculo(&numero1, &numero2, opcion));
                 break;
         case 2: system("clear");
                 printf("Cálculo de pendiente de una recta\n");
