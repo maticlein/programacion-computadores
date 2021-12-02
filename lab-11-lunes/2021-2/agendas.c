@@ -22,7 +22,7 @@ void imprimirMenu() {
 
 void listarAgendas() {
     printf("Listado de agendas disponibles:\n");
-    system("ls ./agendas/*.txt");
+    system("(cd ./agendas/ && ls *.txt)");
 }
 
 void definirRutaArchivo(char rutaArchivo[], char nombreArchivo[]) {
